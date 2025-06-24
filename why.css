@@ -1,0 +1,55 @@
+/* WHY PAGE CUSTOM STYLES */
+
+/* Shorter Hero than homepage */
+.short-hero {
+  height: 60vh;
+  padding-top: 160px;
+  justify-content: center;
+}
+
+/* Main scrollable section */
+.why-section {
+  padding: 3rem 5%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Content blocks */
+.why-block {
+  margin-bottom: 3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 1s ease-in-out;
+  color: white;
+}
+
+.why-block h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.why-block p {
+  font-size: 1.1rem;
+  color: #fffde9;
+  line-height: 1.6;
+}
+
+.stress-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.stress-list li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #fffde9;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

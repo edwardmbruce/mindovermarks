@@ -1,0 +1,156 @@
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ff5c35;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Navigation */
+.navbar {
+  width: 100%;
+  padding: 1.2rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: transparent;
+  box-shadow: none;
+} 
+
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navText {
+  color: white;
+}
+
+.btn-light {
+    background: white;
+    color:#ff5c34;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: 0.3s ease;
+} 
+
+.btn-light:hover {
+  opacity: 0.9;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding-top: 180px;
+  background-color: #ff5c35;
+  position: relative;
+}
+
+.hero-text {
+  max-width: 800px;
+  animation: fadeInUp 1s ease-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  color: #fff9;
+  margin-bottom: 2rem;
+}
+
+/* Petition CTA */
+.petition-cta {
+  max-width: 600px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  animation: fadeInLeft 1s ease-out;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+}
+
+.petition-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.petition-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #fffde9;
+}
+
+.btn-petition {
+  background-color: white;
+  color: #ff5c35;
+  padding: 0.7rem 1.6rem;
+  font-weight: bold;
+  border-radius: 999px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-petition:hover {
+  background-color: #ffe5d6;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
